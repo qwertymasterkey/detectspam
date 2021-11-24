@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="{% static 'text/images/icons/favicon.ico'%}"/>
+	<link rel="icon" type="image/png" href="{% static 'text/images/icons/ico.png'%}"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{% static 'text/vendor/bootstrap/css/bootstrap.min.css'%}">
 <!--===============================================================================================-->
@@ -24,7 +24,6 @@
 <!--===============================================================================================-->
 </head>
 <body>
-
 	<div class="contact1">
 		<div class="container-contact1">
 			<div class="contact1-pic js-tilt" data-tilt>
@@ -54,11 +53,11 @@
 			<form class="contact1-form validate-form" action="detect" method="post">
 				{% csrf_token %}
 				<span class="contact1-form-title">
-					Paste your e-mail
+					Spam Detector
 				</span>
 
 				<div class="wrap-input1 validate-input" data-validate = "Message is required">
-					<textarea class="input1" rows="22" name="message" placeholder="Message" required>{{content}}</textarea>
+					<textarea class="input1" rows="22" name="message" placeholder="Paste your email body" required>{{content}}</textarea>
 					<span class="shadow-input1"></span>
 				</div>
 
