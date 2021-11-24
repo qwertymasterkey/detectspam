@@ -48,7 +48,7 @@ def detect(request):
         if result == 1:
             result="Spam"
         else:
-            result="not a Spam"
+            result="not a Spam!"
         return render(request,"index.html",context={'text':result,'content':email})
     else:
         return render(request,"index.html",{'text':""})
