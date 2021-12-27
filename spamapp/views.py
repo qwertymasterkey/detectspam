@@ -45,7 +45,7 @@ def detect(request):
     # 3. predict
         result = model.predict(vector_input)[0]
     # 4. Display
-        if result == 1:
+        if result == 3:
             result="Spam"
         else:
             result="not a Spam!"
